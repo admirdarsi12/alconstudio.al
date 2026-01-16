@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alcon Studio | Dizajn Premium</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <img src="assets/logo.png" alt="Alcon Studio Logo" class="logo">
+  <nav>
+    <a href="#services">Shërbimet</a>
+    <a href="#about">Rreth Nesh</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Dizajn që Ndërton Marka Serioze</h1>
+  <p>Krijojmë website, logo dhe identitet vizual që duken premium dhe funksionojnë.</p>
+  <a href="#contact" class="btn">Merr Ofertë</a>
+</section>
+
+<section id="services" class="section">
+  <h2>Shërbimet</h2>
+  <div class="cards">
+    <div class="card">Website Development</div>
+    <div class="card">Dizajn Logo & Branding</div>
+    <div class="card">Menaxhim Rrjetesh Sociale</div>
+    <div class="card">Dizajn Grafik</div>
+  </div>
+</section>
+
+<section id="about" class="section dark">
+  <h2>Rreth Alcon Studio</h2>
+  <p>
+    Alcon Studio është një studio kreative që fokusohet në dizajn profesional,
+    identitet vizual dhe zgjidhje digjitale që rrisin vlerën e markës suaj.
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Na Kontakto</h2>
+  <p>Email: info@alconstudio.com</p>
+  <p>Telefon: +355 XX XXX XXX</p>
+</section>
+
+<footer>
+  <p>© 2026 Alcon Studio. Të gjitha të drejtat e rezervuara.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+ css/style.css
+css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #0f2a1f;
+  color: #eaeaea;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #d4af37;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #d4af37;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: #d4af37;
+  color: #0f2a1f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 40px;
+  color: #d4af37;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  padding: 30px;
+  background: #143b2c;
+  border: 1px solid #d4af37;
+}
+
+.dark {
+  background: #0c1f17;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  background: #0c1f17;
+}
